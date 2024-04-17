@@ -108,7 +108,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp N7     &kp N8   &kp N9  &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp N4     &kp N5   &kp N6  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp N1     &kp N2   &kp N3  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_SAI
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp N1     &kp N2   &kp N3  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp COMMA  &kp DOT  &kp N0  &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans   &trans  &trans
             >;
