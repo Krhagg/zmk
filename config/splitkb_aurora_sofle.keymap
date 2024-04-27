@@ -45,11 +45,11 @@
 
         Colemak {
             bindings = <
-&kp ESC              &mt N1 LS(N1)  &mt N2 LS(N2)  &mt N3 LS(N3)  &mt N4 LS(N4)          &mt N5 LS(N5)                                   &mt N6 LS(N6)          &mt N7 LS(N7)          &mt N8 LS(N8)  &mt N9 LS(N9)     &mt N0 LS(N0)        &lt 5 RA(RBKT)
-&kp TAB              &kp Q          &kp W          &kp F          &mt RA(KP_NUMBER_7) P  &mt RA(KP_NUMBER_8) B                           &mt RA(KP_NUMBER_9) J  &mt RA(KP_NUMBER_0) L  &kp U          &kp Y             &kp P                &kp MINUS
-&kp LCTRL            &kp A          &kp R          &kp S          &mt LS(KP_NUMBER_8) T  &kp G                                           &mt LS(KP_NUMBER_9) M  &kp N                  &kp E          &kp I             &kp O                &kp APOS
-&mt LEFT_SHIFT HOME  &kp Z          &kp X          &kp C          &kp D                  &kp V                  &kp LBKT       &kp RBKT  &kp K                  &kp H                  &kp COMMA      &kp DOT           &mt RS(SLASH) SLASH  &mt RIGHT_SHIFT END
-                                    &kp LCTRL      &kp LGUI       &kp LALT               &mo 2                  &lt 4 SPACE    &kp RET   &mo 3                  &kp BSPC               &kp RALT       &kp RA(NUMBER_4)
+&kp ESC              &mt N1 LS(N1)  &mt N2 LS(N2)  &mt N3 LS(N3)  &mt N4 LS(N4)          &mt N5 LS(N5)                                   &mt N6 LS(N6)          &mt N7 LS(N7)          &mt N8 LS(N8)    &mt N9 LS(N9)     &mt N0 LS(N0)        &lt 5 RA(RBKT)
+&kp TAB              &kp Q          &kp W          &mt GRAVE T    &mt RA(KP_NUMBER_7) P  &mt RA(KP_NUMBER_8) B                           &mt RA(KP_NUMBER_9) J  &mt RA(KP_NUMBER_0) L  &mt LS(GRAVE) U  &kp Y             &kp P                &kp MINUS
+&kp LCTRL            &kp A          &kp R          &kp S          &mt LS(KP_NUMBER_8) T  &kp G                                           &mt LS(KP_NUMBER_9) M  &kp N                  &kp E            &kp I             &kp O                &kp APOS
+&mt LEFT_SHIFT HOME  &kp Z          &kp X          &kp C          &kp D                  &kp V                  &kp LBKT       &kp RBKT  &kp K                  &kp H                  &kp COMMA        &kp DOT           &mt RS(SLASH) SLASH  &mt RIGHT_SHIFT END
+                                    &kp LCTRL      &kp LGUI       &kp LALT               &mo 2                  &lt 4 SPACE    &kp RET   &mo 3                  &kp BSPC               &kp RALT         &kp RA(NUMBER_4)
             >;
 
             sensor-bindings =
@@ -122,11 +122,11 @@
 
         numpad {
             bindings = <
-&none   &none   &none   &none    &none    &none                    &none      &none   &none   &none   &none   &none
-&none   &none   &none   &none    &none    &none                    &kp N4     &kp N5  &kp N6  &none   &none   &none
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                   &kp DOT    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none    &none  &kp COMMA  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-                &none   &none    &none    &none    &none    &none  &none      &none   &none   &none
+&trans  &trans  &trans  &trans   &trans   &trans                     &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans   &trans   &trans                     &trans     &trans  &trans  &trans  &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp DOT    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp COMMA  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+                &trans  &trans   &trans   &trans   &trans    &trans  &trans     &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -134,14 +134,16 @@
                 <&inc_dec_kp LC(X) LC(A)>;
         };
 
-        rgb {
+        config {
             bindings = <
-&trans  &trans            &trans             &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
-&trans  &trans            &trans             &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-&trans  &trans            &trans             &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
-&to 0   &ext_power EP_ON  &ext_power EP_OFF  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
-                          &to 1              &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR    &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                     &trans  &trans  &trans  &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
+&out OUT_TOG  &bt BT_DISC 0     &bt BT_DISC 1      &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                    &trans  &trans  &trans  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
+&trans        &trans            &trans             &trans         &trans         &trans                           &trans  &trans  &trans  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
+&to 0         &ext_power EP_ON  &ext_power EP_OFF  &trans         &trans         &trans         &trans    &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
+                                &to 1              &trans         &trans         &trans         &trans    &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "config";
         };
     };
 };
