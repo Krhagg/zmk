@@ -45,11 +45,11 @@
 
         Colemak {
             bindings = <
-&kp ESC              &mt N1 LS(N1)  &mt N2 LS(N2)  &mt N3 LS(N3)  &mt N4 RA(N4)  &mt N5 LS(N5)                           &mt N6 LS(N6)  &mt N7 LS(N7)  &mt N8 LS(N8)    &mt N9 LS(N9)     &mt N0 LS(N0)        &lt 5 RA(RBKT)
-&kp TAB              &kp Q          &kp W          &mt GRAVE T    &mt RA(N7) P   &mt RA(N8) B                            &mt RA(N9) J   &mt RA(N0) L   &mt LS(GRAVE) U  &mt RA(GRAVE) Y   &kp P                &kp LEFT_BRACKET
-&kp LCTRL            &kp A          &kp R          &kp S          &kp T          &mt LS(N8) G                            &mt LS(N9) M   &kp N          &kp E            &kp I             &mt SEMI O           &kp APOS
-&mt LEFT_SHIFT HOME  &kp Z          &kp X          &kp C          &kp D          &kp V          &kp LBKT       &kp RBKT  &kp K          &kp H          &kp COMMA        &kp DOT           &mt RS(SLASH) SLASH  &mt RIGHT_SHIFT END
-                                    &kp LCTRL      &kp LGUI       &kp LALT       &mo 2          &lt 4 SPACE    &kp RET   &mo 3          &kp BSPC       &kp RALT         &kp RA(NUMBER_4)
+&kp ESC              &mt N1 LS(N1)  &mt N2 LS(N2)  &mt N3 LS(N3)    &mt N4 RA(N4)  &mt N5 LS(N5)                           &mt N6 LS(N6)  &mt N7 LS(N7)  &mt N8 LS(N8)       &mt N9 LS(N9)     &mt N0 LS(N0)        &lt 5 RA(RBKT)
+&kp TAB              &kp Q          &kp W          &mt LESS_THAN T  &mt RA(N7) P   &mt RA(N8) B                            &mt RA(N9) J   &mt RA(N0) L   &mt GREATER_THAN U  &mt PIPE Y        &kp P                &kp LEFT_BRACKET
+&kp LCTRL            &kp A          &kp R          &kp S            &kp T          &mt LS(N8) G                            &mt LS(N9) M   &kp N          &kp E               &kp I             &mt SEMI O           &kp APOS
+&mt LEFT_SHIFT HOME  &kp Z          &kp X          &kp C            &kp D          &kp V          &kp LBKT       &kp RBKT  &kp K          &kp H          &kp COMMA           &kp DOT           &mt RS(SLASH) SLASH  &mt RIGHT_SHIFT END
+                                    &kp LCTRL      &kp LGUI         &kp LALT       &mo 2          &lt 4 SPACE    &kp RET   &mo 3          &kp BSPC       &kp RALT            &kp RA(NUMBER_4)
             >;
 
             sensor-bindings =
@@ -122,11 +122,11 @@
 
         numpad {
             bindings = <
-&trans  &trans  &trans  &trans   &trans   &trans                     &trans         &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans   &trans   &trans                     &kp BACKSLASH  &kp MINUS  &trans  &trans  &trans  &trans
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp DOT        &kp N1     &kp N2  &kp N3  &kp N4  &kp N5
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp COMMA      &kp N6     &kp N7  &kp N8  &kp N9  &kp N0
-                &trans  &trans   &trans   &trans   &trans    &trans  &trans         &trans     &trans  &trans
+&trans  &trans  &trans  &trans   &trans   &trans                     &trans       &trans        &trans           &trans         &trans  &trans
+&trans  &trans  &trans  &trans   &trans   &trans                     &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp DOT      &kp N1        &kp N2           &kp N3         &kp N4  &kp N5
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp COMMA    &kp N6        &kp N7           &kp N8         &kp N9  &kp N0
+                &trans  &trans   &trans   &trans   &trans    &trans  &trans       &trans        &trans           &trans
             >;
 
             sensor-bindings =
