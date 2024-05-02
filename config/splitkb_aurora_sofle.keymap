@@ -39,12 +39,12 @@
             label = "RGB_MO";
         };
     };
-
-    keymap {
-        compatible = "zmk,keymap";
 &mt {
     tapping-term-ms = <400>;
 };
+    keymap {
+        compatible = "zmk,keymap";
+
         Colemak {
             bindings = <
 &kp ESC              &mt N1 LS(N1)  &mt N2 LS(N2)  &mt N3 LS(N3)  &mt N4 RA(N4)  &mt N5 LS(N5)                           &mt N6 LS(N6)  &mt N7 LS(N7)  &mt N8 LS(N8)  &mt N9 LS(N9)     &mt N0 LS(N0)        &lt 5 RA(RBKT)
