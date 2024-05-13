@@ -28,9 +28,9 @@
 
     chain-length = <29>; // Uncomment if using only per-key LEDs.
 };
-&mt {
-    tapping-term-ms = <400>;
-};
+
+&mt { tapping-term-ms = <400>; };
+
 / {
     macros {
         rgb_mo: rgb_mo {
@@ -47,11 +47,11 @@
 
         Colemak {
             bindings = <
-&kp ESC              &mt N1 LS(N1)  &mt N2 LS(N2)  &mt N3 LS(N3)  &mt N4 RA(N4)  &mt N5 LS(N5)                           &mt N6 LS(N6)  &mt N7 LS(N7)  &mt N8 LS(N8)  &mt N9 LS(N9)     &mt N0 LS(N0)        &lt 5 RA(RBKT)
-&kp TAB              &kp Q          &kp W          &kp F          &kp P          &kp B                                   &kp J          &kp L          &kp U          &kp Y             &kp P                &kp LEFT_BRACKET
-&kp LCTRL            &kp A          &kp R          &kp S          &kp T          &kp G                                   &kp M          &kp N          &kp E          &kp I             &mt SEMI O           &kp APOS
-&mt LEFT_SHIFT HOME  &kp Z          &kp X          &kp C          &kp D          &kp V          &kp LBKT       &kp RBKT  &kp K          &kp H          &kp COMMA      &kp DOT           &mt RS(SLASH) SLASH  &mt RIGHT_SHIFT END
-                                    &kp LCTRL      &kp LGUI       &kp LALT       &mo 2          &lt 4 SPACE    &kp RET   &mo 3          &kp BSPC       &kp RALT       &kp RA(NUMBER_4)
+&kp ESC              &kp N1  &kp N2     &kp N3    &kp N4    &kp N5                           &kp N6  &kp N7    &kp N8     &kp N9            &kp N0               &lt 5 RA(RBKT)
+&kp TAB              &kp Q   &kp W      &kp F     &kp P     &kp B                            &kp J   &kp L     &kp U      &kp Y             &kp P                &kp LEFT_BRACKET
+&kp LCTRL            &kp A   &kp R      &kp S     &kp T     &kp G                            &kp M   &kp N     &kp E      &kp I             &kp O                &kp APOS
+&mt LEFT_SHIFT HOME  &kp Z   &kp X      &kp C     &kp D     &kp V   &kp LBKT       &kp RBKT  &kp K   &kp H     &kp COMMA  &kp DOT           &mt RS(SLASH) SLASH  &mt RIGHT_SHIFT END
+                             &kp LCTRL  &kp LGUI  &kp LALT  &mo 2   &lt 4 SPACE    &kp RET   &mo 3   &kp BSPC  &kp RALT   &kp RA(NUMBER_4)
             >;
 
             sensor-bindings =
@@ -95,7 +95,7 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &out OUT_TOG                    &trans     &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG
 &kp F1      &kp F2            &kp F3             &kp F4             &kp F5        &kp F6                          &kp F7     &kp F8           &kp F9           &kp F10          &kp F11          &kp F12
-&kp GRAVE   &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS         &kp STAR         &kp LPAR         &kp RPAR         &kp TILDE
+&kp GRAVE   &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS         &kp STAR         &kp LPAR         &kp COLON        &kp TILDE
 &to 0       &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &trans     &kp MINUS        &kp PLUS         &kp LBRC         &kp RBRC         &kp PIPE
                               &trans             &to 1              &trans        &trans        &trans    &trans  &trans     &trans           &trans           &trans
             >;
