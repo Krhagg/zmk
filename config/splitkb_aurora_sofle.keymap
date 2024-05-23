@@ -29,7 +29,7 @@
     chain-length = <29>; // Uncomment if using only per-key LEDs.
 };
 
-&mt { tapping-term-ms = <400>; };
+&mt { tapping-term-ms = <200>; };
 
 / {
     macros {
