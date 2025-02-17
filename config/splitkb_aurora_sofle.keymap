@@ -49,7 +49,7 @@
             bindings = <
 &kp ESC              &kp N1  &kp N2     &kp N3    &kp N4          &kp N5                         &kp N6     &kp N7           &kp N8     &kp N9         &kp N0            &lt 3 RBKT
 &kp TAB              &kp Q   &kp W      &kp F     &kp P           &kp B                          &kp J      &kp L            &kp U      &kp Y          &kp LEFT_BRACKET  &kp APOS
-&kp APOS             &kp A   &kp R      &kp S     &kp T           &kp G                          &kp M      &kp N            &kp E      &kp I          &kp O             &kp SEMICOLON
+&kp NON_US_BSLH      &kp A   &kp R      &kp S     &kp T           &kp G                          &kp M      &kp N            &kp E      &kp I          &kp O             &kp SEMICOLON
 &mt LEFT_SHIFT HOME  &kp Z   &kp X      &kp C     &kp D           &kp V   &kp LBKT     &kp RBKT  &kp COMMA  &kp K            &kp H      &kp DOT        &kp SLASH         &mt RIGHT_ALT END
                              &kp LCTRL  &kp LGUI  &kp LEFT_SHIFT  &mo 2   &kp SPACE    &kp RET   &mo 1      &kp RIGHT_SHIFT  &kp RCTRL  &kp BACKSPACE
             >;
@@ -70,11 +70,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans          &trans  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)      &kp RA(NUMBER_4)  &trans                        &trans      &kp RA(NUMBER_7)  &kp RA(NUMBER_8)     &kp RA(NUMBER_9)     &kp RA(NUMBER_0)  &kp EQUAL
-&kp GRAVE       &none   &none             &kp NON_US_BACKSLASH  &kp RA(N7)        &kp RA(N8)                    &kp RA(N9)  &kp RA(N0)        &kp RS(NON_US_BSLH)  &kp RA(NON_US_BSLH)  &trans            &kp NON_US_HASH
-&none           &none   &none             &none                 &none             &kp RS(N8)                    &kp RS(N9)  &kp LEFT          &kp DOWN             &kp UP               &kp RIGHT         &kp RS(N2)
-&kp LEFT_SHIFT  &none   &none             &none                 &kp RA(NUMBER_4)  &none       &trans    &trans  &none       &none             &none                &none                &none             &kp RIGHT_SHIFT
-                        &trans            &trans                &trans            &trans      &trans    &trans  &trans      &trans            &trans               &kp DEL
+&trans               &trans  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)      &kp RA(NUMBER_4)  &trans                        &trans      &kp RA(NUMBER_7)  &kp RA(NUMBER_8)     &kp RA(NUMBER_9)     &kp RA(NUMBER_0)  &kp EQUAL
+&kp GRAVE            &none   &none             &kp NON_US_BACKSLASH  &kp RA(N7)        &kp RA(N8)                    &kp RA(N9)  &kp RA(N0)        &kp RS(NON_US_BSLH)  &kp RA(NON_US_BSLH)  &trans            &kp NON_US_HASH
+&kp RA(NON_US_BSLH)  &none   &none             &none                 &none             &kp RS(N8)                    &kp RS(N9)  &kp LEFT          &kp DOWN             &kp UP               &kp RIGHT         &kp RS(N2)
+&kp LEFT_SHIFT       &none   &none             &none                 &kp RA(NUMBER_4)  &none       &trans    &trans  &none       &none             &none                &none                &none             &kp RIGHT_SHIFT
+                             &trans            &trans                &trans            &trans      &trans    &trans  &trans      &trans            &trans               &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -96,11 +96,11 @@
 
         config {
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                     &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans
-&out OUT_TOG  &bt BT_DISC 0     &bt BT_DISC 1      &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                    &trans           &trans           &trans           &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-&trans        &trans            &trans             &trans         &trans         &trans                           &trans           &trans           &trans           &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
-&trans        &ext_power EP_ON  &ext_power EP_OFF  &trans         &trans         &trans         &trans    &trans  &trans           &trans           &trans           &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
-                                &none              &trans         &trans         &trans         &trans    &trans  &trans           &trans           &trans           &trans
+&bt BT_CLR    &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                     &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans
+&out OUT_TOG  &bt BT_DISC 0      &bt BT_DISC 1     &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                    &trans           &trans           &trans           &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
+&trans        &trans             &trans            &trans         &trans         &trans                           &trans           &trans           &trans           &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
+&trans        &ext_power EP_OFF  &ext_power EP_ON  &trans         &trans         &trans         &trans    &trans  &trans           &trans           &trans           &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
+                                 &none             &trans         &trans         &trans         &trans    &trans  &trans           &trans           &trans           &trans
             >;
 
             label = "config";
