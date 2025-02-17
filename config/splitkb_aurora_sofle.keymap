@@ -70,11 +70,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans          &trans  &trans  &trans                &trans      &trans                        &trans      &trans      &trans               &trans               &trans     &kp EQUAL
-&kp GRAVE       &none   &none   &kp NON_US_BACKSLASH  &kp RA(N7)  &kp RA(N8)                    &kp RA(N9)  &kp RA(N0)  &kp RS(NON_US_BSLH)  &kp RA(NON_US_BSLH)  &trans     &kp NON_US_HASH
-&none           &none   &none   &none                 &none       &kp RS(N8)                    &kp RS(N9)  &kp LEFT    &kp DOWN             &kp UP               &kp RIGHT  &kp RS(N2)
-&kp LEFT_SHIFT  &none   &none   &none                 &none       &none       &trans    &trans  &none       &none       &none                &none                &none      &kp RIGHT_SHIFT
-                        &trans  &trans                &trans      &trans      &trans    &trans  &trans      &trans      &trans               &kp DEL
+&trans          &trans  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)      &kp RA(NUMBER_4)  &trans                        &trans      &kp RA(NUMBER_7)  &kp RA(NUMBER_8)     &kp RA(NUMBER_9)     &kp RA(NUMBER_0)  &kp EQUAL
+&kp GRAVE       &none   &none             &kp NON_US_BACKSLASH  &kp RA(N7)        &kp RA(N8)                    &kp RA(N9)  &kp RA(N0)        &kp RS(NON_US_BSLH)  &kp RA(NON_US_BSLH)  &trans            &kp NON_US_HASH
+&none           &none   &none             &none                 &none             &kp RS(N8)                    &kp RS(N9)  &kp LEFT          &kp DOWN             &kp UP               &kp RIGHT         &kp RS(N2)
+&kp LEFT_SHIFT  &none   &none             &none                 &kp RA(NUMBER_4)  &none       &trans    &trans  &none       &none             &none                &none                &none             &kp RIGHT_SHIFT
+                        &trans            &trans                &trans            &trans      &trans    &trans  &trans      &trans            &trans               &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
