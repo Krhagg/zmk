@@ -47,11 +47,11 @@
 
         Colemak {
             bindings = <
-&kp ESC           &kp N1  &kp N2               &kp N3    &kp N4          &kp N5                         &kp N6     &kp N7           &kp N8     &kp N9         &kp N0            &lt 3 RBKT
-&kp TAB           &kp Q   &kp W                &kp F     &kp P           &kp B                          &kp J      &kp L            &kp U      &kp Y          &kp LEFT_BRACKET  &kp APOS
-&kp NON_US_BSLH   &kp A   &kp R                &kp S     &kp T           &kp G                          &kp M      &kp N            &kp E      &kp I          &kp O             &kp SEMICOLON
-&kp LEFT_CONTROL  &kp Z   &kp X                &kp C     &kp D           &kp V   &kp LBKT     &kp RBKT  &kp COMMA  &kp K            &kp H      &kp DOT        &kp SLASH         &mt RIGHT_ALT END
-                          &mt LEFT_SHIFT HOME  &kp LGUI  &kp LEFT_SHIFT  &mo 2   &kp SPACE    &kp RET   &mo 1      &kp RIGHT_SHIFT  &kp RCTRL  &kp BACKSPACE
+&kp ESC           &kp N1  &kp N2               &kp N3    &kp N4          &kp N5                                &kp N6     &kp N7           &kp N8     &kp N9         &kp N0            &lt 3 RBKT
+&kp TAB           &kp Q   &kp W                &kp F     &kp P           &kp B                                 &kp J      &kp L            &kp U      &kp Y          &kp LEFT_BRACKET  &kp APOS
+&kp NON_US_BSLH   &kp A   &kp R                &kp S     &kp T           &kp G                                 &kp M      &kp N            &kp E      &kp I          &kp O             &kp SEMICOLON
+&kp LEFT_CONTROL  &kp Z   &kp X                &kp C     &kp D           &kp V   &kp CAPS     &kp PRINTSCREEN  &kp COMMA  &kp K            &kp H      &kp DOT        &kp SLASH         &mt RIGHT_ALT END
+                          &mt LEFT_SHIFT HOME  &kp LGUI  &kp LEFT_SHIFT  &mo 2   &kp SPACE    &kp RET          &mo 1      &kp RIGHT_SHIFT  &kp RCTRL  &kp BACKSPACE
             >;
 
             sensor-bindings =
